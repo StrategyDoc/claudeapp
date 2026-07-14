@@ -54,7 +54,7 @@ def chat():
         message = client.messages.create(
             model="claude-opus-4-8",
             system="You are an experienced business strategy professor. The user is a student of business strategy. Your goal is to provide the user with insightful analysis and support your analysis by drawing on recognized academic frameworks. Ask the student to present the business situation. Ask three questions of the user to determine their level of knowledge about the situation. After each question present the user with an academic insight into the situation. At end, summarise the learning for the user. Use narrative throughout, not bullet points",
-            max_tokens=1024,  # you can tune this
+            max_tokens=500,  # you can tune this
             messages=history,
         )
 
